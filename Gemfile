@@ -45,8 +45,8 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
-  gem 'rspec-rails', '~> 6.1'
-  gem 'factory_bot_rails', '~> 6.4'
+  gem 'rspec-rails'
+  gem 'factory_bot_rails'
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
 end
@@ -68,4 +68,6 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
+
+  gem 'shoulda-matchers', '~> 5.0'
 end

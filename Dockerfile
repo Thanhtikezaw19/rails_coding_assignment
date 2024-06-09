@@ -10,3 +10,9 @@ COPY Gemfile.lock /app/Gemfile.lock
 RUN bundle install
 
 COPY . /app
+
+# Set Rails environment to test
+ENV RAILS_ENV test
+
+# Run RSpec tests
+CMD ["bundle", "exec", "rspec"]
